@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 70px 1fr 70px;
+}
+
+header {
+    background-color: mediumvioletred;
+    grid-column: 1/ -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+footer {
+    background-color: mediumvioletred;
+    grid-column: 1/ -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+nav {
+    background-color: #f2d0e0;
+    width: 300px;
+}
+
+
+
+.bolos {
+    width: ;
+}
+
+img {
+    width: 24px;
+}
