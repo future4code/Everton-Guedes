@@ -12,14 +12,14 @@ class App extends React.Component {
           fotoPost={'https://picsum.photos/200/150'}
         />
         <Post
-          nomeUsuario={'AnaRaio'}
-          fotoUsuario={'https://picsum.photos/200/151'}
-          fotoPost={'https://picsum.photos/50/52'}
+          nomeUsuario={'joao'}
+          fotoUsuario={'https://picsum.photos/50/51'}
+          fotoPost={'https://picsum.photos/200/151'}
         />
         <Post
-          nomeUsuario={'ZéTrovão'}
+          nomeUsuario={'amanda'}
           fotoUsuario={'https://picsum.photos/50/52'}
-          fotoPost={'https://picsum.photos/50/52'}
+          fotoPost={'https://picsum.photos/200/152'}
         />
       </div>
     );
@@ -27,5 +27,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-
