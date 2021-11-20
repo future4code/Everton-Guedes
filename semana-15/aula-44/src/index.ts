@@ -34,6 +34,23 @@ app.get("/users", (req, res) => {
   }
 });
 
+// Exercício 2
+
+// a. Como você passou os parâmetros de type para a requisição? Por quê?
+
+// b. Você consegue pensar em um jeito de garantir que apenas `types` válidos sejam utilizados?
+
+app.get("/users/search", (req, res) => {
+  const result: User[] = users.filter((User) =>
+    User.name.includes(req.query.type as string)
+  );
+  if (result.length) {
+    res.status(200).send(result);
+  } else {
+    res.status(404).send("Not found");
+  }
+});
+
 const server = app.listen(process.env.PORT || 3003, () => {
   if (server) {
     const address = server.address() as AddressInfo;
